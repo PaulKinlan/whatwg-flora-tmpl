@@ -1,7 +1,7 @@
 {
-  "name": "flora-tmpl",
+  "name": "whatwg-flora-tmpl",
   "version": "1.0.0",
-  "description": "Streaming templates for node",
+  "description": "Streaming templates for node and Web using WhatWG streams. Based on flora-stream",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha test/test.js",
@@ -10,15 +10,14 @@
   "keywords": [
     "templates"
   ],
-  "author": "Matthew Phillips",
+  "type": "module",
+  "author": "Paul Kinlan",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "is-promise": "^2.1.0",
-    "is-stream": "^1.1.0",
-    "stream-array": "^1.1.2"
+    "web-streams-polyfill": "^2.1.1"
   },
   "devDependencies": {
-    "mocha": "^3.1.0",
+    "mocha": "^7.1.0",
     "through2": "^2.0.3"
   }
 }

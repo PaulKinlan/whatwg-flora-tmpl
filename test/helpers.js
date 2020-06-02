@@ -1,16 +1,13 @@
-const through = require('through2');
+export default async function readAll(stream) {
+  const reader = stream.getReader();
+  let buffer = [];
 
-async function readAll(stream) {
-  let values = [];
-  return new Promise((resolve, reject) => {
-    stream.on('error', err => reject(err));
-    stream.pipe(through(function(val, enc, next){
-      values.push(val.toString().trim());
-      next();
-    }, function(){
-      resolve(values);
-    }));
+  return reader.read().then(function process(result) {
+    if (result.done) {
+      return buffer;
+    }
+
+    buffer.push(result.value);
+    return reader.read().then(process);
   });
-}
-
-exports.readAll = readAll;
+};

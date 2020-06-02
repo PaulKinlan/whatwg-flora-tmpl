@@ -1,3 +1,3 @@
-require('./test-textnodes.js');
-require('./test-attributes.js');
-require('./test-lists.js');
+import './test-textnodes.js';
+import './test-attributes.js';
+import './test-lists.js';
