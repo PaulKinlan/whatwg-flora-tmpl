@@ -1,4 +1,4 @@
-# flora
+# flora for WhatWG Streams
 
 > __whatwg-flora-tmpl__ on npm.
 
