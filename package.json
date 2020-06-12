@@ -1,6 +1,6 @@
 {
   "name": "whatwg-flora-tmpl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Streaming templates for node and Web using WhatWG streams. Based on flora-stream",
   "main": "lib/index.js",
   "scripts": {
