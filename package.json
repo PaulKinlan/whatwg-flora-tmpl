@@ -17,7 +17,6 @@
     "web-streams-polyfill": "^2.1.1"
   },
   "devDependencies": {
-    "mocha": "^7.1.0",
-    "through2": "^2.0.3"
+    "mocha": "^7.1.0"
   }
 }
