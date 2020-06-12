@@ -58,7 +58,7 @@ describe('Lists', function () {
 
       let expected = [
         '<ul>',
-        2, 4, 6, 8,
+        "2", "4", "6", "8",
         '</ul>'
       ];
 
@@ -78,7 +78,7 @@ describe('Lists', function () {
 
       let expected = [
         '<ul>',
-        2, 4, 6, 8,
+        "2", "4", "6", "8",
         '</ul>'
       ];
 
